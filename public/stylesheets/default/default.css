@@ -882,7 +882,7 @@ span.delete {
 	overflow:hidden;
 
 	/* vertical scrollables have typically larger height than width but not now */
-	height: 480px;
+	height: 420px;
 	width: 280px;
     text-align: justify;
 }
