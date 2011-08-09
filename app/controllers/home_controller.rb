@@ -25,7 +25,7 @@ class HomeController < ApplicationController
 
   def menu_object_init #on the layout
     @menu = Menu.new
-    @menus = Menu.find(:all) #where( :active => true )
+    @menus = Menu.find(:all, :order => "sort_number ASC") #where( :active => true )
   end
 
   def content_object_init #on the layout
