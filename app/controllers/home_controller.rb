@@ -30,7 +30,7 @@ class HomeController < ApplicationController
 
   def content_object_init #on the layout
     @content = Content.new
-    @contents = Content.find(:all, :order => "updated_at DESC")
+    @contents = Content.find(:all, :order => "sort_number ASC")
   end
 
   def tab_object_init #on the layout

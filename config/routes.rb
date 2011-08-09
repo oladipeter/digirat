@@ -1,4 +1,4 @@
-Mikrokamnew::Application.routes.draw do  
+Mikrokamnew::Application.routes.draw do
 
   resources :infos
 
@@ -36,7 +36,9 @@ Mikrokamnew::Application.routes.draw do
   match "infos/:id/show_tabs" => "infos#show_tabs", :as => "show_the_tabs"
   #match "home/:id/content" => "home#content", :as => "naming_url_content"
   
-  # ADMIN  
+  # ADMIN
+
+
 
 
   # The priority is based upon order of creation:
