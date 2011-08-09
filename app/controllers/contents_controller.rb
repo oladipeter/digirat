@@ -9,7 +9,7 @@ class ContentsController < ApplicationController
   def index
     @info = Info.new
     @info_contents = Info.all
-    @contents = Content.find(:all) #, :order => "sort_number ASC")
+    @contents = Content.find(:all, :order => "sort_number ASC")
 
     respond_to do |format|
       format.html # index.html.erb
